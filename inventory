@@ -1,5 +1,15 @@
-[remote_servers]
-192.168.56.122 apache_package=apache2 php_package=libapache2-mod-php
-192.168.56.123 apache_package=apache2 php_package=libapache2-mod-php
-192.168.56.124 apache_package=httpd php_package=php
+[web_servers]
+192.168.56.122
+192.168.56.123
+192.168.56.124	ansible_python_interpreter=/usr/bin/python2
+
+[file_servers]
+192.168.56.126
+
+[workstations]
+192.168.56.126
+
+[db_servers]
+192.168.56.124	ansible_python_interpreter=/usr/bin/python2
+192.168.56.123
 
